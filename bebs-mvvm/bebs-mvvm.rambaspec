@@ -20,7 +20,7 @@ code_files:
 - {name: ViewModel.swift, path: Code/ViewModel/viewModel.swift.liquid}
 
 # ModuleOutput layer
-- {name: ModuleOutput, path: Code/ViewModel/moduleOutput.swift.liquid}
+- {name: ModuleOutput.swift, path: Code/ViewModel/moduleOutput.swift.liquid}
 
 # Template dependencies
 dependencies:
