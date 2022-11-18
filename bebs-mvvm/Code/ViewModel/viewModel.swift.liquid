@@ -17,6 +17,7 @@ final class {{ module_info.name }}ViewModel {
     // MARK: - Init
 
     init(moduleOutput: {{ module_info.name }}ModuleOutput) {
+	self.moduleOutput = moduleOutput
         bind()
     }
 }
