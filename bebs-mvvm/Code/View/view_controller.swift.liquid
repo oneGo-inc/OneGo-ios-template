@@ -21,7 +21,8 @@ final class {{ module_info.name }}Controller: UIViewController {
 
     // MARK: - Init
 
-    init() {
+    init(viewModel: {{ module_info.name }}ViewModel) {
+	self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
         setup()
         bind()

@@ -14,12 +14,9 @@ final class {{ module_info.name }}Configurator {
 
     func configure() -> UIViewController {
 
-        // TODO: Change title and message
-        let view = {{ module_info.name }}Controller(title: nil, message: nil, preferredStyle: .alert)
-
         let viewModel = {{ module_info.name }}ViewModel()
 
-        view.viewModel = viewModel
+        let view = {{ module_info.name }}Controller(viewModel: viewModel)
 
         return view
     }
