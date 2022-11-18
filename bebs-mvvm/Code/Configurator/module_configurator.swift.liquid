@@ -14,7 +14,7 @@ final class {{ module_info.name }}Configurator {
 
     func configure(moduleOutput: {{ module_info.name }}ModuleOutput) -> UIViewController {
 
-        let viewModel = {{ module_info.name }}ViewModel(moduleOutput: {{ module_info.name }}ModuleOutput)
+        let viewModel = {{ module_info.name }}ViewModel(moduleOutput: moduleOutput)
 
         let view = {{ module_info.name }}Controller(viewModel: viewModel)
 
