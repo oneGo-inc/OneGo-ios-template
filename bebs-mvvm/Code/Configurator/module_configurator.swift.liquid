@@ -12,9 +12,9 @@ final class {{ module_info.name }}Configurator {
 
     // MARK: - Internal methods
 
-    func configure() -> UIViewController {
+    func configure(moduleOutput: {{ module_info.name }}ModuleOutput) -> UIViewController {
 
-        let viewModel = {{ module_info.name }}ViewModel()
+        let viewModel = {{ module_info.name }}ViewModel(moduleOutput: {{ module_info.name }}ModuleOutput)
 
         let view = {{ module_info.name }}Controller(viewModel: viewModel)
 
